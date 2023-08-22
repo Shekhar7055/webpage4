@@ -1,0 +1,39 @@
+/* Write your styles here  */
+#header h1{
+  text-align: center;
+}
+#header p{
+  border: 2px red;
+  text-align: center;
+  line-height: 1rem;
+}
+#doctors{
+  display: flex;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 100px; 
+  padding-left: 30px;
+  justify-content: space-around;
+}
+#service{
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+#doctors p{
+text-align: center;
+
+}
+
+body {
+  /* background-color: red; */
+}
+
+/* keep media queries at the bottom */
+/* Medium screens */
+@media all and (min-width: 451px) and (max-width: 750px) {
+}
+/* Small screens */
+@media all and (min-width: 100px) and (max-width: 450px) {
+}
