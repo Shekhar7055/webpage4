@@ -5,7 +5,7 @@
 #header p{
   border: 2px red;
   text-align: center;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 #doctors{
   display: flex;
@@ -14,6 +14,10 @@
   margin-bottom: 100px; 
   padding-left: 30px;
   justify-content: space-around;
+  padding-top: 20px;
+}
+#doctors>div{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #service{
   display: grid;
@@ -25,15 +29,60 @@
 text-align: center;
 
 }
+.button{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  }
+  .a{
+    color: blue;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+   
+  }
+  .b{
+ 
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
 
-body {
-  /* background-color: red; */
-}
+  }
+  .a:hover{
+    background-color: rgb(175, 170, 170);
+  }
+  .b:hover{
+    background-color: orange;
+    color: white;
+  }
+   #service>div{
+    padding: 25px;
+   }
 
 /* keep media queries at the bottom */
 /* Medium screens */
 @media all and (min-width: 451px) and (max-width: 750px) {
+  #doctors{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+  }
+  #service{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, auto);
+  }
 }
 /* Small screens */
 @media all and (min-width: 100px) and (max-width: 450px) {
+  #doctors{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  #service{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6, auto);
+  }
 }
